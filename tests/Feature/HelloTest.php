@@ -12,3 +12,4 @@ test('view', function () {
         'title' => 'Larapwell'
     ])->assertSeeText('Hello Laravel');
 });
+
