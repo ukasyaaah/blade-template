@@ -27,3 +27,5 @@ Route::get('/html-encode', function (Request $req) {
 Route::get('/disabled', function () {
     return view('disabled', ['name' => 'Wiro']);
 });
+
+Route::view('/if', 'if_state', ['hobi' => [ 'Nonton', ]]);
