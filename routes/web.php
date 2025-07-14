@@ -28,4 +28,8 @@ Route::get('/disabled', function () {
     return view('disabled', ['name' => 'Wiro']);
 });
 
-Route::view('/if', 'if_state', ['hobi' => [ 'Nonton', ]]);
+// If statement
+Route::view('/if', 'if_state', ['hobi' => ['Nonton',]]);
+
+// Unless statement
+Route::view('/unless', 'unless', ['isMember' => false]);
