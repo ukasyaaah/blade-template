@@ -23,3 +23,7 @@ Route::view('/head-nav', 'head.nav');
 Route::get('/html-encode', function (Request $req) {
     return view('html-encoding', ['name' => $req->input('name')]);
 });
+
+Route::get('/disabled', function () {
+    return view('disabled', ['name' => 'Wiro']);
+});
